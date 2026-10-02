@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis 15 Años - Maria Veliz</title>
+
+  <!-- Meta etiquetas para SEO y redes -->
+  <meta name="description" content="Acompáñame a celebrar mis 15 Años. Sábado 13 de Noviembre de 2026.">
+  <meta name="theme-color" content="#4d5d47">
+
+  <!-- Open Graph para Vista Previa en WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Invitación de 15 Años">
+  <meta property="og:title" content="Mis XV Años - Maria Veliz">
+  <meta property="og:description" content="Acompáñame a celebrar este día tan especial. Sábado 13 de noviembre, 2026. ¡Haz clic para ver la invitación!">
+  <meta property="og:image" content="https://invitacion-mu-blush.vercel.app/assets/imagenes/og-preview.jpg">
+  <meta property="og:image:secure_url" content="https://invitacion-mu-blush.vercel.app/assets/imagenes/og-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://invitacion-mu-blush.vercel.app/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mis XV Años - Maria Veliz">
+  <meta name="twitter:description" content="Acompáñame a celebrar este día tan especial. Sábado 13 de noviembre, 2026.">
+  <meta name="twitter:image" content="https://invitacion-mu-blush.vercel.app/assets/imagenes/og-preview.jpg">
+
+  <!-- Favicon / Ícono de la pestaña -->
+  <link rel="icon" type="image/png" href="assets/imagenes/flor-decorativa.png">
+
+  <!-- Precarga de fuentes e imágenes críticas para mayor velocidad -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" src="assets/musica/cancion.mp3" loop preload="auto"></audio>
+
+  <!-- ==================== PANTALLA 1: PORTADA EN CAPAS ==================== -->
+  <div id="pantalla-sobre" class="sobre-contenedor">
+
+    <!-- Capa 1: Flores ornamentadas -->
+    <img src="assets/imagenes/flor-top-right.png" alt="" aria-hidden="true" class="capa-flor flor-tr" decoding="async">
+    <img src="assets/imagenes/flor-bottom-left.png" alt="" aria-hidden="true" class="capa-flor flor-bl" decoding="async">
+
+    <!-- Capa 2: Contenido central -->
+    <div class="contenido-portada">
+      <p class="subtitulo-xv">MIS XV</p>
+      <h1 class="nombre-quinceanera">Maria Veliz</h1>
+
+      <div class="separador-corazon" aria-hidden="true">─── 🌿 ───</div>
+
+      <!-- El sobre interactivo -->
+      <div class="wrapper-sobre">
+        <img src="assets/imagenes/sobre.png" alt="Sobre de invitación para Maria Veliz" class="img-sobre">
+      </div>
+
+      <p class="frase-invitacion">Acompáñame a celebrar este día tan especial.</p>
+
+      <div class="separador-corazon" aria-hidden="true">─── 🌿 ───</div>
+
+      <!-- Botón para abrir la invitación -->
+      <button id="btn-abrir" class="btn-abrir-sobre" type="button">
+        ABRIR INVITACIÓN
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ==================== PANTALLA 2: CONTENIDO PRINCIPAL ==================== -->
+  <main class="invitacion">
+    
+    <!-- Control de música -->
+    <div class="reproductor">
+      <button id="btn-pausa" class="btn-musica" type="button" aria-label="Pausar o reproducir música">🎵</button>
+    </div>
+
+    <header class="cabecera fade-in">
+      <p class="etiqueta">MIS XV AÑOS</p>
+      <h1 class="titulo-principal">Maria Veliz</h1>
+    </header>
+
+    <!-- ===== BENDICIÓN, PADRES Y PADRINOS ===== -->
+    <section class="tarjeta-presentacion fade-in">
+      <img src="assets/imagenes/flor-top-left.png" alt="" aria-hidden="true" class="ramita-accento ramita-tl" decoding="async">
+      <img src="assets/imagenes/flor-bottom-right.png" alt="" aria-hidden="true" class="ramita-accento ramita-br" decoding="async">
+
+      <p class="texto-bendicion">
+        Cumplir 15 años es el comienzo de una etapa hermosa. No hay mejor manera de celebrarlo que rodeada de las personas que más amo, dando gracias a Dios por estos años llenos de aprendizajes, risas y bendiciones, así como por la oportunidad de seguir creciendo y fortaleciendo los dones que me regaló para cada momento de mi vida.
+      </p>
+
+      <div class="seccion-familia">
+        <img src="assets/imagenes/padrinos.jpg" alt="Mis Padrinos: José Condori y Elsa Chavez" class="imagen-familia" loading="lazy">
+        <img src="assets/imagenes/flor-decorativa.png" alt="" aria-hidden="true" class="flor-familia flor-familia-izq" decoding="async">
+        <img src="assets/imagenes/flor-decorativa.png" alt="" aria-hidden="true" class="flor-familia flor-familia-der" decoding="async">
+        <img src="assets/imagenes/padres.jpg" alt="Mis Padres: Edgar Veliz y Olivia Barzola" class="imagen-familia" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ===== FRASE DE INVITACIÓN ===== -->
+    <p class="frase-baile fade-in">Quiero festejar mis XV años bailando y gozando con la gente que más quiero. ¿Vienes?</p>
+
+    <!-- ===== CONTADOR Y CALENDARIO ===== -->
+    <section class="contador-caja fade-in">
+      <img src="assets/imagenes/calendario-noviembre.png" alt="Calendario: Sábado 13 de Noviembre de 2026" class="imagen-bleed-lateral" loading="lazy">
+      <img src="assets/imagenes/mariposas.png" alt="" aria-hidden="true" class="mariposas-contador" decoding="async">
+      
+      <h2 class="titulo-cuenta">Solo falta</h2>
+      
+      <div class="contador" role="timer" aria-live="off">
+        <div class="unidad"><span id="dias">00</span><p>Días</p></div>
+        <span class="separador-tiempo" aria-hidden="true">:</span>
+        <div class="unidad"><span id="horas">00</span><p>Horas</p></div>
+        <span class="separador-tiempo" aria-hidden="true">:</span>
+        <div class="unidad"><span id="min">00</span><p>Minutos</p></div>
+        <span class="separador-tiempo" aria-hidden="true">:</span>
+        <div class="unidad"><span id="seg" class="numero-segundos">00</span><p>Segundos</p></div>
+      </div>
+      
+      <img src="assets/imagenes/sapos.png" alt="" aria-hidden="true" class="img-sapos" decoding="async">
+    </section>
+
+    <!-- ===== UBICACIÓN DEL EVENTO ===== -->
+    <section class="detalles">
+      <div class="tarjeta-ubicacion-oscura fade-in">
+        <img src="assets/imagenes/flor-decorativa.png" alt="" aria-hidden="true" class="flor-ubicacion" decoding="async">
+        <h2 class="titulo-ubicacion">Ubicación</h2>
+        <p class="texto-ubicacion">Salón de Eventos "Recepciones Mariategui"<br>Frente a botica Visión.</p>
+        <p class="texto-ubicacion hora-ubicacion">8:00 PM</p>
+        <a href="https://maps.app.goo.gl/3TSBd36jCsSo65no6" target="_blank" rel="noopener noreferrer" class="btn-dorado-pill">Ver Ubicación</a>
+      </div>
+    </section>
+
+    <!-- ===== SUGERIR CANCIONES / PLAYLIST ===== -->
+    <section class="playlist fade-in">
+      <h2 class="titulo-playlist">Armemos una playlist</h2>
+      <p class="texto-playlist">La música también construye sueños. Déjame tu recomendación para hacer de esta noche un recuerdo inolvidable.</p>
+      <div class="playlist-accion">
+        <img src="assets/imagenes/cocodrilo.png" alt="" aria-hidden="true" class="img-cocodrilo" decoding="async">
+        <a id="btn-playlist" href="https://docs.google.com/forms/d/e/1FAIpQLSf81BBE9hp1QNlzFSq5XH8SpuHYLa2Tb80XTy4v0trjLEXfhw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="btn-dorado-pill">Sugerir Canción</a>
+      </div>
+    </section>
+
+    <!-- ===== CONFIRMACIÓN DE ASISTENCIA ===== -->
+    <section class="confirmacion fade-in">
+      <img src="assets/imagenes/flor-decorativa.png" alt="" aria-hidden="true" class="flor-confirmacion" decoding="async">
+      <p class="texto-confirmacion">Tu presencia es parte de este sueño. Confirma tu asistencia y acompáñame a celebrar mis quince años.</p>
+      <a id="btn-asistencia" href="https://docs.google.com/forms/d/e/1FAIpQLSf6kkNBmxArOoofGeVwBGjpt5he5LrbtqtBhyG35daa4EGRDA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" class="btn-dorado-pill">Confirmar Asistencia</a>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
